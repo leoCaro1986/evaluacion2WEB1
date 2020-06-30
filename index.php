@@ -15,35 +15,36 @@
 
 <header>
 <h1 class="text-center mt-5">REGISTRO DE USUARIO</h1>
-<h2 class="text-center mt-5">Ingrese los siguientes datos</h2>
+
 </header>
 
 <main>
+<h2 class="text-center mt-5">Ingrese los siguientes datos</h2>
     <div class="container">
         <div class="row">
             <div class="col">
-                <form>
+                <form action="agregarDatos.php" method="POST">
                     <div class="row">
                         <div class="col">
-                        <input type="text" class="form-control" placeholder="NOMBRE">
+                        <input id="nombre" type="text" class="form-control" placeholder="NOMBRE" name="nombre">
                         </div>
                             <div class="col">
-                            <input type="text" class="form-control" placeholder="APELLIDO">
+                            <input id="apellido" type="text" class="form-control" placeholder="APELLIDO" name="apellido">
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col">
-                        <input type="email" class="form-control" placeholder="E-MAIL">
+                        <input id="email" type="email" class="form-control" placeholder="E-MAIL" name="email">
                         </div>
                             <div class="col">
-                            <input type="password" class="form-control" placeholder="CONTRASEÑA">
+                            <input id="password" type="password" class="form-control" placeholder="CONTRASEÑA" name="password">
                         </div>
                     </div>
                     <br>
                         <div class="row">
                             <div class="col">
-                                <button id="agregar" type="submit" class="btn btn-primary">AGREGAR</button>
+                                <button id="btnAgregar" type="submit" class="btn btn-success btn-lg" name="btnAgregar">AGREGAR</button>
                             </div>
                         </div>
                 </form>
@@ -56,15 +57,15 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="NOMBRE DE USUARIO"> 
+                <form action="consultaDatos.php" method="POST">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <input id="consultar" type="text" class="form-control" placeholder="NOMBRE DE USUARIO" name="consultar"> 
                         </div>    
                     </div>
                         <br>
                     <div>
-                        <button type="submit" class="btn btn-primary">BUSCAR</button>
+                        <button id="btnConsultar" type="submit" class="btn btn-primary btn-lg" name="btnConsultar">CONSULTAR</button>
                     </div>
                 </form>    
             </div>
@@ -76,15 +77,15 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form>
-                    <div class="row md-5">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="NOMBRE DE USUARIO"> 
+                <form action="eliminarDatos.php" method="POST">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <input id="eliminar" type="text" class="form-control" placeholder="NOMBRE DE USUARIO" name="eliminar"> 
                         </div>    
                     </div>
                         <br>
                     <div>
-                        <button type="submit" class="btn btn-primary">ACTUALIZAR</button>
+                        <button id="btnEliminar" type="submit" class="btn btn-danger btn-lg" name="btnEliminar">ELIMINAR</button>
                     </div>
                 </form>    
             </div>
@@ -93,6 +94,7 @@
 </main>
 
 <footer>
+    <h5 class="nav-bar">by LCV-2020 &copy</h5>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

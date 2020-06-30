@@ -1,18 +1,43 @@
-#agregar {
+#btnAgregar {
     
     display: flex;
-  justify-content: center;
-   
+    justify-content: center;
     position:relative;
     top:10%; 
-    left:46%;
+    left:44%;
 }
 
 
 
 body{
-    background-color: darkgrey;
+    background-color: rgb(101, 171, 218);
 }
 form{
-    margin-top: ;
+    margin: 3px;
+}
+
+#btnConsultar {
+    
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top:10%; 
+    left:44%;
+}
+#btnEliminar {
+    
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top:10%; 
+    left:44%;
+}
+
+main{
+    background-color: rgb(63, 90, 83);
+    margin: 10em;
+}
+
+h2{
+    color: white; 
 }
